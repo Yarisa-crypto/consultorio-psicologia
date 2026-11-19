@@ -27,30 +27,9 @@ header p{
     margin: 10px 0 0;
     font-size: 1.2rem;
 }
-
-nav{
-    background-color: var(--blanco);
-}
-
-nav ul{
-    list-style: none;
-    margin: 0;
-    padding: 15px 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-nav a{
-    text-decoration: none;
-    color: var(--gris-oscuro);
-    font-weight: bold;
-}
-
-nav a:hover{
+.navbar-item:hover {
     color: var(--verde-salvia);
 }
-
 main{
     max-width: 1100px;
     margin: 0 auto;
