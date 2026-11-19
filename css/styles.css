@@ -16,9 +16,6 @@ body {
 
 header{
     background-color: var(--verde-salvia);
-    color: var(--blanco);
-    text-align: center;
-    padding: 40px 20px; 
 }
 
 header h1{
