@@ -131,3 +131,14 @@ html {
     border-color: var(--verde-salvia);
     color: var(--blanco);
 }
+
+.precio {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--verde-salvia);
+}
+
+.card-destacada {
+    border: 2px solid var(--verde-salvia);
+}
