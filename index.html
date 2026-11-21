@@ -6,19 +6,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mente Serena - Consultorio de Psicología</title>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class ="hero is-medium">
+    <header class ="hero is-large">
         <div class="hero-body has-text-centered">
             <h1 class="title is-1 has-text-white">Mente Serena</h1>
             <p class="subtitle is-4 has-text-white">Un espacio para escucharte</p>
+            <a href="#contacto" class="button is-white is-rounded is-medium mt-4">Agenda tu cita</a>
         </div>
     </header>
 
-    <nav class="navbar is-white" role="navigation" aria-label="Navegación principal">
+    <nav class="navbar is-white is-spaced" role="navigation" aria-label="Navegación principal">
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item has-text-weight-bold" href="#inicio">Mente Serena</a>
@@ -40,51 +46,86 @@
         </div>
     </nav>
 
+
+    
+
+
+
     <main class="section">
         <div class="container">
             <div class="columns is-variable is-6">
             
                 <article class="column is-three-quarters" id="inicio">
-                    <section class="block">
-                        <h2 class="title is-3">Bienvenido a Mente Serena</h2>
+
+                    <section class="block mb-6">
+                        <h2 class="title is-3 section-title">Bienvenido a Mente Serena</h2>
                         <p>Bienvenido a Mente Serena, donde tu bienestar es nuestra prioridad.</p>
                     </section>
                 
-                    <section class="block">
+                    <section class="block mb-6" id = "nosotros">
                         <h2 class="title is-3" id="nosotros">Nosotros</h2>
                         <p>En Mente Serena, contamos con un equipo de psicólogos altamente capacitados que se dedican a ayudarte a superar tus desafíos emocionales y mentales.</p>
                     </section>
                 
-                    <section class="block">
-                        <h2 class="title is-3" id="servicios">Servicios</h2>
-                        <ul>
-                            <li>Terapia individual</li>
-                            <li>Terapia de pareja</li>
-                            <li>Terapia familiar</li>
-                            <li>Asesoramiento psicológico</li>
-                        </ul>
+                   <section class="block mb-6" id="servicios">
+                        <h2 class="title is-3 section-title">Servicios</h2>
+                        <div class="columns is-multiline">
+                            <div class="column is-half">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <p class="title is-5"><i class="fa-solid fa-user icono-serena"></i> Terapia individual</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <p class="title is-5"><i class="fa-solid fa-heart icono-serena"></i> Terapia de pareja</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <p class="title is-5"><i class="fa-solid fa-people-roof icono-serena"></i> Terapia familiar</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-half">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <p class="title is-5"><i class="fa-solid fa-comments icono-serena"></i> Asesoramiento psicológico</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </section>
-                
-                    <section class="block">
-                        <h2 class="title is-3" id="contacto">Contacto</h2>
-                        <p>Si deseas agendar una cita o tienes alguna pregunta, no dudes en contactarnos.</p>
+
+                    <section class="block" id="contacto">
+                        <h2 class="title is-3 section-title">Contacto</h2>
+                        <p class="mb-4">Si deseas agendar una cita o tienes alguna pregunta, no dudes en contactarnos.</p>
+                        <a href="mailto:informacion@menteserena.com" class="button btn-serena is-rounded is-medium">Escríbenos</a>
                     </section>
                 </article>
-            
+
                 <aside class="column">
-                    <h2 class="title is-5">Información rápida</h2>
-                    <p><strong>Horario:</strong> Lunes a viernes, 8:00 AM - 6:00 PM</p>
-                    <p><strong>Teléfono:</strong> +57 3022467578</p>
-                    <p><strong>Correo:</strong> infomacion@menteserena.com</p>
+                    <div class="box">
+                        <h2 class="title is-5">Información rápida</h2>
+                        <p class="mb-3"><i class="fa-solid fa-clock icono-serena"></i> <strong>Horario:</strong> Lunes a viernes, 8:00 AM - 6:00 PM</p>
+                        <p class="mb-3"><i class="fa-solid fa-phone icono-serena"></i> <strong>Teléfono:</strong> +57 3022467578</p>
+                        <p><i class="fa-solid fa-envelope icono-serena"></i> <strong>Correo:</strong> informacion@menteserena.com</p>
+                    </div>
                 </aside>
-            
+
             </div>
         </div>
     </main>
 
-    <footer>
+   <footer class="footer footer-serena has-text-centered">
         <p>&copy; 2026 Mente Serena. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 
 </body>
 

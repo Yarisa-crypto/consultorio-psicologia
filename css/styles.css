@@ -5,56 +5,72 @@
     --blanco: #FFFFFF;
     --gris-oscuro: #3A3A3A;
     --azul-suave: #A9C0C9;
+    
+    --bulma-body-background-color: var(--beige);
+    --bulma-text: var(--gris-oscuro);
+    --bulma-text-strong: var(--gris-oscuro);
+    --bulma-family-primary: 'Nunito', sans-serif;
 }
 
-body {
-    margin:0;
-    font-family: sans-serif;
-    color: var(--gris-oscuro);
-    background-color: var(--beige);
+.title {
+    font-family: 'Playfair Display', serif;
 }
 
-header{
-    background-color: var(--verde-salvia);
+header {
+    background: linear-gradient(135deg, var(--verde-salvia), var(--azul-suave));
 }
 
-header h1{
-    margin: 0;
-    font-size: 2.5rem;
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
-header p{
-    margin: 10px 0 0;
-    font-size: 1.2rem;
-}
 .navbar-item:hover {
     color: var(--verde-salvia);
 }
 
+/*Titulos de seccion*/
 
-section h2 {
+.section-title {
     color: var(--verde-salvia);
     border-bottom: 2px solid var(--azul-suave);
     padding-bottom: 8px;
 }
 
-aside{
-    flex: 1;
-    background-color: var(--blanco);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+/* Tarjetas */
+.card {
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+.box {
+    border-radius: 16px;
+}
+
+/* Íconos */
+.icono-serena {
+    color: var(--verde-salvia);
+    margin-right: 6px;
+}
+
+.btn-serena {
+    background-color: var(--verde-salvia);
+    color: var(--blanco);
+    border: none;
+}
+
+.btn-serena:hover {
+    background-color: #77877a;
+    color: var(--blanco);
 }
 
 
-footer{
+.footer-serena {
     background-color: var(--gris-oscuro);
     color: var(--blanco);
-    text-align:center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-.title {
-    color: var(--verde-salvia);
 }
