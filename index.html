@@ -57,7 +57,7 @@
         <div class="hero-body has-text-centered">
             <h1 class="title is-1 has-text-white">Mente Serena</h1>
             <p class="subtitle is-4 has-text-white">Un espacio para escucharte</p>
-            <a href="#contacto" class="button is-white is-rounded is-medium mt-4">Agenda tu cita</a>
+            <button class="button is-white is-rounded is-medium mt-4 js-modal-trigger" data-target="modalCita">Agenda tu cita</button>
         </div>
     </header>
 
@@ -272,6 +272,40 @@
     <a href="#" class="button is-rounded btn-serena btn-subir" aria-label="Volver arriba">
         <span class="icon"><i class="fa-solid fa-arrow-up"></i></span>
     </a>
+
+    <div class="modal" id="modalCita">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Agenda tu cita</p>
+                <button class="delete" aria-label="Cerrar"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label class="label" for="cita-nombre">Nombre</label>
+                    <div class="control">
+                        <input class="input is-rounded" id="cita-nombre" type="text" placeholder="Tu nombre">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="cita-telefono">Teléfono</label>
+                    <div class="control">
+                        <input class="input is-rounded" id="cita-telefono" type="tel" placeholder="300 000 0000">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="cita-fecha">Fecha preferida</label>
+                    <div class="control">
+                        <input class="input is-rounded" id="cita-fecha" type="date">
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button btn-serena is-rounded js-modal-close">Solicitar cita</button>
+                <button class="button is-rounded js-modal-close">Cancelar</button>
+            </footer>
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 
