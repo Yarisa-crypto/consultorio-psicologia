@@ -74,3 +74,33 @@ header {
     background-color: var(--gris-oscuro);
     color: var(--blanco);
 }
+
+/* Franja de datos */
+.franja-datos {
+    background-color: var(--blanco);
+    padding: 2rem 1.5rem;
+}
+
+.franja-datos .title {
+    color: var(--verde-salvia);
+}
+
+/* Etiquetas */
+.etiqueta-serena {
+    background-color: var(--azul-suave);
+    color: var(--gris-oscuro);
+}
+
+/* Aviso */
+.aviso-serena {
+    border-left: 4px solid var(--verde-salvia);
+}
+
+/* Mensajes */
+.mensaje-serena .message-header {
+    background-color: var(--verde-salvia);
+}
+
+.mensaje-serena {
+    --bulma-message-body-border-color: var(--verde-salvia);
+}
