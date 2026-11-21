@@ -110,6 +110,8 @@ header .subtitle {
 .mensaje-serena {
     --bulma-message-body-border-color: var(--verde-salvia);
 }
+
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
 }
