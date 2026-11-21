@@ -142,3 +142,17 @@ html {
 .card-destacada {
     border: 2px solid var(--verde-salvia);
 }
+
+.faq details {
+    border-bottom: 1px solid var(--azul-suave);
+    padding: 0.75rem 0;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.faq details p {
+    margin-top: 0.5rem;
+}
