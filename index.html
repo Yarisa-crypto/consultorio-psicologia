@@ -5,7 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mente Serena - Consultorio de Psicología</title>
+    <meta name="description" content="Mente Serena, consultorio de psicología. Terapia individual, de pareja y familiar.">
+    <meta name="theme-color" content="#8A9A8B">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,19 +19,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
-    <header class ="hero is-large">
-        <div class="hero-body has-text-centered">
-            <h1 class="title is-1 has-text-white">Mente Serena</h1>
-            <p class="subtitle is-4 has-text-white">Un espacio para escucharte</p>
-            <a href="#contacto" class="button is-white is-rounded is-medium mt-4">Agenda tu cita</a>
-        </div>
-    </header>
+<body class="has-navbar-fixed-top">
 
-    <nav class="navbar is-white is-spaced" role="navigation" aria-label="Navegación principal">
+    <nav class="navbar is-white is-fixed-top" role="navigation" aria-label="Navegación principal">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item has-text-weight-bold" href="#inicio">Mente Serena</a>
+                <a class="navbar-item has-text-weight-bold" href="#">Mente Serena</a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -35,16 +32,35 @@
                     <span aria-hidden="true"></span>
                 </a>
             </div>
+
             <div id="menuPrincipal" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item" href="#inicio">Inicio</a>
+                    <a class="navbar-item" href="#">Inicio</a>
                     <a class="navbar-item" href="#nosotros">Nosotros</a>
-                    <a class="navbar-item" href="#servicios">Servicios</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link" href="#servicios">Servicios</a>
+                        <div class="navbar-dropdown is-boxed">
+                            <a class="navbar-item" href="#servicios">Terapia individual</a>
+                            <a class="navbar-item" href="#servicios">Terapia de pareja</a>
+                            <a class="navbar-item" href="#servicios">Terapia familiar</a>
+                            <a class="navbar-item" href="#servicios">Asesoramiento psicológico</a>
+                        </div>
+                    </div>
                     <a class="navbar-item" href="#contacto">Contacto</a>
                 </div>
             </div>
+
         </div>
     </nav>
+
+    <header class="hero is-large">
+        <div class="hero-body has-text-centered">
+            <h1 class="title is-1 has-text-white">Mente Serena</h1>
+            <p class="subtitle is-4 has-text-white">Un espacio para escucharte</p>
+            <button class="button is-white is-rounded is-medium mt-4 js-modal-trigger" data-target="modalCita">Agenda tu cita</button>
+        </div>
+    </header>
+
 
     <section class="section franja-datos">
         <div class="container">
@@ -82,8 +98,8 @@
                         <p>Bienvenido a Mente Serena, donde tu bienestar es nuestra prioridad.</p>
                     </section>
                 
-                    <section class="block mb-6" id = "nosotros">
-                        <h2 class="title is-3" id="nosotros">Nosotros</h2>
+                    <section class="block mb-6 seccion-alterna" id = "nosotros">
+                        <h2 class="title is-3 section-title">Nosotros</h2>
                         <p>En Mente Serena, contamos con un equipo de psicólogos altamente capacitados que se dedican a ayudarte a superar tus desafíos emocionales y mentales.</p>
                     </section>
                 
@@ -138,6 +154,66 @@
                             </div>
 
                         </div>
+                        <div class="tabs is-centered is-toggle is-toggle-rounded mt-5">
+                            <ul>
+                                <li class="is-active" data-tab="tab-individual"><a href="#">Individual</a></li>
+                                <li data-tab="tab-pareja"><a href="#">Pareja</a></li>
+                                <li data-tab="tab-familia"><a href="#">Familia</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="box">
+                            <div id="tab-individual" class="tab-panel content">
+                                <p>Un espacio privado para trabajar ansiedad, estrés, duelo y autoestima. Sesiones de 50 minutos.</p>
+                            </div>
+                            <div id="tab-pareja" class="tab-panel content is-hidden">
+                                <p>Mejora la comunicación y resuelve conflictos con acompañamiento profesional. Sesiones de 60 minutos.</p>
+                            </div>
+                            <div id="tab-familia" class="tab-panel content is-hidden">
+                                <p>Fortalece los vínculos familiares y aprende a manejar los cambios en conjunto. Sesiones de 60 minutos.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="block mb-6" id="precios">
+                        <h2 class="title is-3 section-title">Precios</h2>
+                        <div class="columns is-multiline">
+
+                            <div class="column is-one-third-desktop">
+                                <div class="card">
+                                        <div class="card-content has-text-centered">
+                                            <p class="title is-5">Sesión individual</p>
+                                            <p class="precio">$90.000</p>
+                                            <p class="mb-4">50 minutos</p>
+                                            <button class="button btn-serena is-rounded js-modal-trigger" data-target="modalCita">Agendar</button>
+                                        </div>
+                                </div>
+                            </div>
+                            
+                            <div class="column is-one-third-desktop">
+                                <div class="card card-destacada">
+                                    <div class="card-content has-text-centered">
+                                            <span class="tag is-rounded etiqueta-serena mb-2">Más elegido</span>
+                                            <p class="title is-5">Sesión de pareja</p>
+                                            <p class="precio">$120.000</p>
+                                            <p class="mb-4">60 minutos</p>
+                                            <button class="button btn-serena is-rounded js-modal-trigger" data-target="modalCita">Agendar</button>
+                                     </div>
+                                </div>
+                            </div>
+                            
+                            <div class="column is-one-third-desktop">
+                                <div class="card">
+                                    <div class="card-content has-text-centered">
+                                            <p class="title is-5">Plan mensual</p>
+                                            <p class="precio">$320.000</p>
+                                            <p class="mb-4">4 sesiones individuales</p>
+                                            <button class="button btn-serena is-rounded js-modal-trigger" data-target="modalCita">Agendar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
                     </section>
 
                     <section class="block mb-6" id="testimonios">
@@ -166,6 +242,62 @@
                                 </div>
                             </article>
                         </div>
+                    </section>
+
+                    <section class="block mb-6 seccion-alterna" id="horarios">
+                        <h2 class="title is-3 section-title">Horarios</h2>
+                        <div class="table-container">
+                            <table class="table is-striped is-hoverable is-fullwidth">
+                                <thead>
+                                    <tr>
+                                        <th>Día</th>
+                                        <th>Horario</th>
+                                        <th>Modalidad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Lunes a viernes</td>
+                                        <td>8:00 AM - 6:00 PM</td>
+                                        <td>Presencial y virtual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sábados</td>
+                                        <td>9:00 AM - 1:00 PM</td>
+                                        <td>Virtual</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Domingos y festivos</td>
+                                        <td>Cerrado</td>
+                                        <td>-</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <section class="block mb-6 faq" id="preguntas">
+                        <h2 class="title is-3 section-title">Preguntas frecuentes</h2>
+                    
+                        <details>
+                            <summary>¿Cómo es la primera sesión?</summary>
+                            <p>Es una conversación de orientación donde conocemos tu situación y definimos objetivos.</p>
+                        </details>
+                    
+                        <details>
+                            <summary>¿Cuánto dura cada sesión?</summary>
+                            <p>Entre 50 y 60 minutos, según el tipo de terapia.</p>
+                        </details>
+                    
+                        <details>
+                            <summary>¿Puedo cancelar o reprogramar?</summary>
+                            <p>Sí, avisando con al menos 24 horas de anticipación.</p>
+                        </details>
+                    
+                        <details>
+                            <summary>¿Lo que hablo es confidencial?</summary>
+                            <p>Sí. Toda la información de las sesiones es confidencial.</p>
+                        </details>
                     </section>
 
 
@@ -252,6 +384,46 @@
    <footer class="footer footer-serena has-text-centered">
         <p>&copy; 2026 Mente Serena. Todos los derechos reservados.</p>
     </footer>
+
+    <a href="#" class="button is-rounded btn-serena btn-subir" aria-label="Volver arriba">
+        <span class="icon"><i class="fa-solid fa-arrow-up"></i></span>
+    </a>
+
+    <div class="modal" id="modalCita">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Agenda tu cita</p>
+                <button class="delete" aria-label="Cerrar"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="field">
+                    <label class="label" for="cita-nombre">Nombre</label>
+                    <div class="control">
+                        <input class="input is-rounded" id="cita-nombre" type="text" placeholder="Tu nombre">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="cita-telefono">Teléfono</label>
+                    <div class="control">
+                        <input class="input is-rounded" id="cita-telefono" type="tel" placeholder="300 000 0000">
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="cita-fecha">Fecha preferida</label>
+                    <div class="control">
+                        <input class="input is-rounded" id="cita-fecha" type="date">
+                    </div>
+                </div>
+            </section>
+
+            <footer class="modal-card-foot">
+                <button class="button btn-serena is-rounded js-modal-close">Solicitar cita</button>
+                <button class="button is-rounded js-modal-close">Cancelar</button>
+            </footer>
+            
+        </div>
+    </div>
 
     <script src="js/main.js"></script>
 
