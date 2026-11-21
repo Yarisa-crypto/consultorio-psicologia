@@ -32,3 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+    // Tabs
+    const tabs = document.querySelectorAll('.tabs li');
+    const paneles = document.querySelectorAll('.tab-panel');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault();
+            tabs.forEach(t => t.classList.remove('is-active'));
+            paneles.forEach(p => p.classList.add('is-hidden'));
+            tab.classList.add('is-active');
+            document.getElementById(tab.dataset.tab).classList.remove('is-hidden');
+        });
+    });

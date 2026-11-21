@@ -125,3 +125,9 @@ html {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     z-index: 30;
 }
+
+.tabs.is-toggle li.is-active a {
+    background-color: var(--verde-salvia);
+    border-color: var(--verde-salvia);
+    color: var(--blanco);
+}
