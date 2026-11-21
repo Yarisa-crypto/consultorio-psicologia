@@ -203,7 +203,6 @@ html {
     color: var(--azul-suave);
 }
 
-/* Animación de entrada */
 @keyframes aparecer {
     from {
         opacity: 0;
@@ -215,17 +214,20 @@ html {
     }
 }
 
-.section-title,
-.card,
-.box {
-    animation: aparecer 0.8s ease backwards;
-}
 
-/* Respeta a quien prefiere menos movimiento */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation: none !important;
         transition: none !important;
         scroll-behavior: auto !important;
     }
+}
+
+.reveal {
+    opacity: 0;
+}
+
+.reveal.visible {
+    opacity: 1;
+    animation: aparecer 0.8s ease backwards;
 }

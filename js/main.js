@@ -46,3 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById(tab.dataset.tab).classList.remove('is-hidden');
         });
     });
+
+        // Animación al hacer scroll
+    const elementos = document.querySelectorAll('.section-title, .card, .box, .level-item');
+
+    const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach(entrada => {
+            if (entrada.isIntersecting) {
+                entrada.target.classList.add('visible');
+                observador.unobserve(entrada.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    elementos.forEach(el => {
+        el.classList.add('reveal');
+        observador.observe(el);
+    });
