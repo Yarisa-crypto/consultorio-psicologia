@@ -17,7 +17,13 @@
 }
 
 header {
-    background: linear-gradient(135deg, var(--verde-salvia), var(--azul-suave));
+    background: linear-gradient(135deg, rgba(95, 112, 96, 0.78), rgba(110, 140, 155, 0.72)),
+                url('../images/hero.jpeg') center / cover;
+}
+
+header .title,
+header .subtitle {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .navbar {
@@ -103,4 +109,7 @@ header {
 
 .mensaje-serena {
     --bulma-message-body-border-color: var(--verde-salvia);
+}
+html {
+    scroll-behavior: smooth;
 }
