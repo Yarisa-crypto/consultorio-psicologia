@@ -193,3 +193,12 @@ html {
 .btn-serena:hover {
     background-color: #5F705F;
 }
+
+.icono-footer {
+    color: var(--blanco);
+    margin: 0 10px;
+}
+
+.icono-footer:hover {
+    color: var(--azul-suave);
+}
